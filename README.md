@@ -71,7 +71,13 @@ npm test
 
 Make sure to keep your API keys private and never commit the `.env` file to version control.
 
-## Learn More
+## Content Highlights
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-# Mindtrip
+- **Search Functionality:** Emphasizes the ability to search for restaurants, tourist attractions, and hotels by name.
+- **Mapping:** Highlights the integration with Google Maps for visualizing locations.
+<img width="1728" alt="Screenshot 2024-12-10 at 10 30 00 PM" src="https://github.com/user-attachments/assets/90f57ade-af10-4ec0-9718-eddbdd5778e8">
+
+- **Global Searches:** Points out the flexibility to search in any city worldwide, catering to both local and international travelers.
+- **User Benefits:** Briefly mentions how Mindtrip simplifies travel planning, making it more user-friendly and efficient.
+<img width="1727" alt="Screenshot 2024-12-10 at 10 31 11 PM" src="https://github.com/user-attachments/assets/4332f548-0f36-4df8-bd2b-ff5f2c31e139">
+
