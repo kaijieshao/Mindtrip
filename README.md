@@ -73,5 +73,8 @@ Make sure to keep your API keys private and never commit the `.env` file to vers
 
 ## Learn More
 
+<img width="1728" alt="Screenshot 2024-12-10 at 10 30 00 PM" src="https://github.com/user-attachments/assets/56033794-0c7e-44b7-ac31-a979f72a0854">
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # Mindtrip
