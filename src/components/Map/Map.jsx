@@ -1,13 +1,13 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react'
-import { Paper, Typography, useMediaQuery } from '@material-ui/core'
+import { Paper, Typography, useMediaQuery, Button } from '@material-ui/core'
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined'
 import Rating from '@material-ui/lab/Rating'
 
 import useStyles from './styles'
 
 import mapStyles from './mapStyles'
-
+import { useBlockchain } from '../../context/BlockchainContext'
 const Map = ({
   setCoordinates,
   setBounds,
@@ -17,11 +17,14 @@ const Map = ({
 }) => {
   const classes = useStyles()
   const isDesktop = useMediaQuery('(min-width:600px)')
+  const { mintMemory } = useBlockchain()
+
+  const googleMapsApiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY || ''
 
   return (
     <div className={classes.mapContainer}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
+        bootstrapURLKeys={{ key: googleMapsApiKey }}
         defaultCenter={coordinates}
         center={coordinates}
         defaultZoom={14}
@@ -66,6 +69,18 @@ const Map = ({
                 />
 
                 <Rating size='small' value={Number(place.rating)} readOnly />
+                <Button
+                  size='small'
+                  color='primary'
+                  onClick={() => {
+                    const block = mintMemory(place)
+                    alert(
+                      `Memory minted! Block hash: ${block.hash.slice(0, 10)}...`
+                    )
+                  }}
+                >
+                  Mint Memory
+                </Button>
               </Paper>
             )}
           </div>
