@@ -25,19 +25,30 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const filteredPlaces = places.filter((place) => place.rating > rating)
-    setFilteredPlaces(filteredPlaces)
-  }, [rating])
+    if (places && places.length) {
+      const filtered = places.filter((place) => Number(place.rating) > rating)
+      setFilteredPlaces(filtered)
+    }
+  }, [rating, places])
 
   useEffect(() => {
     if (bounds.sw && bounds.ne) {
       setIsLoading(true)
 
-      getPlacesData(type, bounds.sw, bounds.ne).then((data) => {
-        setPlaces(data?.filter((place) => place.name && place.num_reviews > 0))
-        setFilteredPlaces([])
-        setIsLoading(false)
-      })
+      getPlacesData(type, bounds.sw, bounds.ne)
+        .then((data) => {
+          if (data) {
+            setPlaces(
+              data.filter((place) => place.name && place.num_reviews > 0)
+            )
+            setFilteredPlaces([])
+          }
+          setIsLoading(false)
+        })
+        .catch((error) => {
+          console.error('Error fetching places:', error)
+          setIsLoading(false)
+        })
     }
   }, [type, bounds])
 
