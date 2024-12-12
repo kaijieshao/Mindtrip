@@ -1,6 +1,6 @@
 # Mindtrip 🌍✈️
 
-**Mindtrip** Mindtrip is a modern, React-based travel companion application that empowers travelers to explore the world with ease. Whether you're planning your next adventure or discovering hidden gems in a new city, Mindtrip combines powerful tools and intuitive features to make every trip seamless and unforgettable. 
+**Mindtrip** is a modern, React-based travel companion application that empowers travelers to explore the world with ease. Whether you're planning your next adventure or discovering hidden gems in a new city, Mindtrip combines powerful tools and intuitive features to make every trip seamless and unforgettable. 
 
 ## ✨ Features
 
