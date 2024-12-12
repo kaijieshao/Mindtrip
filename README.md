@@ -104,11 +104,15 @@ Make sure to keep your API keys private and never commit the `.env` file to vers
 
 - **Search Functionality:** Emphasizes the ability to search for restaurants, tourist attractions, and hotels by name.
 - **Mapping:** Highlights the integration with Google Maps for visualizing locations.
+  
 <img width="1728" alt="Screenshot 2024-12-12 at 10 36 12 AM" src="https://github.com/user-attachments/assets/1e0fa554-38fe-4c84-93ab-8457705bd607" />
 
 - **Global Searches:** Points out the flexibility to search in any city worldwide, catering to both local and international travelers.
 - **User Benefits:** Briefly mentions how Mindtrip simplifies travel planning, making it more user-friendly and efficient.
+  
 <img width="1728" alt="Screenshot 2024-12-12 at 10 40 04 AM" src="https://github.com/user-attachments/assets/c16d3d7b-b939-4c78-aca8-06c3bff0d5bd" />
+
+
 <img width="1728" alt="Screenshot 2024-12-12 at 10 40 40 AM" src="https://github.com/user-attachments/assets/f42e6f29-5b06-4191-8147-7e230deba908" />
 
 
